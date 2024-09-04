@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function displayMe( ) {
+        var textValue = document.getElementById('text').value;
+        var IPI = document.getElementById('IPI').value;
+        var IMI = document.getElementById('IMI').value;
+        var OOP = document.getElementById('OOP').value;
+        var EDP = document.getElementById('EDP').value;
+        var HC2 = document.getElementById('HC2').value;
+
+        var total = Number(IPI) + Number(IMI) + Number(OOP) + Number(EDP) + Number(HC2);
+        var average = total / 5;
+        alert("Name: " + textValue + "\nIPI: " + IPI + "\nIMI: " + IMI + "\nOOP: " + OOP + "\nEDP: " + EDP + "\n HC2: " + HC2 + "\nAverage: " + average);
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <b>Name:</b> <input type="string" id="text"> <br>
+        <b>Grade:</b> <br>
+        <b>IPI:</b> <input type="string" id="IPI"> <br>
+        <b>IMI:</b> <input type="string" id="IMI"> <br>
+        <b>OOP:</b> <input type="string" id="OOP"> <br>        
+        <b>EDP:</b> <input type="string" id="EDP"> <br>
+        <b>HC2:</b> <input type="string" id="HC2"> <br>
+        <button onclick="displayMe()"><b>Compute</b></button>
+    </div>
+</body>
+</html>
